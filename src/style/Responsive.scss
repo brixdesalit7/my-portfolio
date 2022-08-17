@@ -14,10 +14,17 @@
     // INTRODUCTION
     .Introduction {
         position: relative;
-        top: 100px;
-        padding: 0 0 0 15px;
+        top: 150px;
         width: 100%;
-        overflow: hidden;
+        padding: 0;
+        .intro-box-1 h1 {
+            word-wrap: break-word;
+            font-size: 75px !important;
+        }
+        .intro-box-1 p {
+            word-wrap: break-word;
+            font-size: 30px !important;
+        }
         .intro-flexbox {
             display: block;
         }
@@ -27,12 +34,28 @@
     }
 
     // ABOUT ME
+    #About-me {
+        height: 100%;
+    }
+    #About-me h2 {
+        font-size: 40px;
+    }
     .about-wrapper {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .my-image {
+        width: 250px;
+        margin: 0 auto;
     }
     .my-image img {
-        width: 300px;
-        margin: 0 auto;
+        width: 100%;
+    }
+    .about-content p {
+        margin-top: 20px;
+        font-size: 11px;
     }
 }
