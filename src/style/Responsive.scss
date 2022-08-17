@@ -1,0 +1,38 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    // NAVBAR
+    .navbar-wrap {
+        padding: 5px 0px;
+    .navbar-title {
+        padding: 13px 3px;
+        margin-left: 13px;
+    }
+    .navbar-menu {
+        display: none;
+    }
+    }
+    // INTRODUCTION
+    .Introduction {
+        position: relative;
+        top: 100px;
+        padding: 0 0 0 15px;
+        width: 100%;
+        overflow: hidden;
+        .intro-flexbox {
+            display: block;
+        }
+        .intro-box-2 {
+            display: none;
+        }
+    }
+
+    // ABOUT ME
+    .about-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .my-image img {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
