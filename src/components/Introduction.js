@@ -1,7 +1,4 @@
 import React from 'react'
-import '../style/App.scss';
-import '../style/Responsive.scss';
-import Iframe from 'react-iframe';
 
 const Introduction = () => {
     const gitAnim = {
@@ -15,7 +12,7 @@ const Introduction = () => {
         height : "300px"
     }
 return (
-    <div className='Introduction'>
+    <div className='Introduction'  id="header-section">
         <div className='intro-flexbox'>
             <div className='intro-box-1'>
                 <h1>Hi, I'm Bryxx</h1>

@@ -17,6 +17,9 @@ $latoFont : 'Lato', sans-serif;
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: rgb(242, 242, 242);
+}
 /* NAVBAR STYLE */
 // animation
 #header-section {
@@ -111,7 +114,7 @@ $latoFont : 'Lato', sans-serif;
 // END OF NAVBAR STYLE
 
 
-// INTRODUCTION STYLE
+// INTRODUCTION SECTION
 .Introduction {
   position: relative;
   top: 210px;
@@ -159,7 +162,7 @@ $latoFont : 'Lato', sans-serif;
 }
 // END OF INTROUCTION STYLE
 
-//ABOUT ME
+//ABOUT ME SECTION
 #About-me {
   width: 100%;
   position: relative;
@@ -168,7 +171,7 @@ $latoFont : 'Lato', sans-serif;
   .about-wrapper {
     position: relative;
     padding: 15px 8px; 
-    top: 55px;
+    top: 100px;
     max-width: 850px;
     margin: 0 auto;
     display: flex;
@@ -202,8 +205,39 @@ $latoFont : 'Lato', sans-serif;
 #About-me h2 {
   position: relative;
   text-align: center;
-  top: 45px;
+  top: 85px;
   font-size: 55px;
   font-weight: 300;
   font-family: $poppinsFont;
+}
+
+// CERTIFICATE SECTION
+.certificate {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  top: 120px;
+  border: 1px solid red;
+  padding: 10px 15px;
+  .certificate-content h2 {
+    text-align: center;
+    font-size: 55px;
+    font-family: $poppinsFont;
+    font-weight: 300;
+  }
+  .certificate-grid {
+    position: relative;
+    top: 70px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+  }
+  .certificate-image{
+    max-width: 700px;
+    border: 1px solid red;
+    margin: 0 auto;
+  }
+  .certificate-image img {
+    max-width: 300px;
+  
+  }
 }
