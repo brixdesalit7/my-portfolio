@@ -1,11 +1,14 @@
-import './style/App.scss';
 import React from 'react';
+// import stylesheet
+import './style/App.scss';
+import './style/Responsive.scss';
 // import component
 import  Navbar  from './components/Navbar';
 import  Introduction  from './components/Introduction';
 import AboutMe from './components/AboutMe';
 import Certificate from './components/Certificate';
 import Myimg from './img/my-img.webp';
+// import certficate image
 import webResponsive from './img/web-responsive-certi.webp';
 import frontEnd from './img/front-end-certi.webp';
 import javaScript from './img/javascript-certi.webp';
