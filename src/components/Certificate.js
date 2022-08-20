@@ -5,7 +5,7 @@ import FsLightbox from 'fslightbox-react';
 
 
 const Certificate = (props) => {
-  // ligthbox
+  // lightbox
   const [lightboxController, setLightboxController] = useState({
     toggler: false,
     slide: 1
