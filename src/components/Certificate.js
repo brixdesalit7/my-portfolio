@@ -20,7 +20,7 @@ const Certificate = (props) => {
   return (
     <div className='certificate'>
         <div className='certificate-content'>
-            <h2>My Certificate</h2>
+            <h2>My Certificat</h2>
             <FsLightbox
             toggler={lightboxController.toggler}
             sources={[
