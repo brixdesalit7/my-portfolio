@@ -10,7 +10,20 @@ const AboutMe = (props) => {
           <img src={props.img} alt="myImage"/>
         </div>
         <div className='about-content'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sem massa, eleifend maximus turpis quis, porta pulvinar erat. Donec faucibus venenatis erat id tincidunt. Maecenas ut pellentesque purus, at placerat tellus.</p>
+          <p>
+            My name is Bryxx, I lived in Muntinlupa City, Philippines, I am fresh graduate of 3 years course in 
+            Diploma in Information Technology from Datamex Institute of Computer Technology.
+          </p>
+          <p>
+            Since when i was a child I'm really fascinated in computer that is why on my college years i take a computer 
+            related course to gain additional knowledge, and then i started to learned hardware, networking and software development
+            , but the field really interested me web development.
+          </p>
+          <p>
+            Then i started to study each languages used in Web Development, like HTML and CSS, then after a months i am familiarize
+            in front-end and back-end web development.
+          </p>
+          <h3>Tech Stacks: </h3>
         </div>
     </div>
     </section>
