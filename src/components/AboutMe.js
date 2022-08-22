@@ -27,37 +27,37 @@ const AboutMe = (props) => {
             <h3>Technology Stacks</h3>
             <div className='tech-icons-wrapper'>
               <div className='tech-icons'>
-                <img src={props.htmlLogo}/>
+                <img src={props.htmlLogo} alt="html-Logo"/>
               </div>
               <div className='tech-icons'>
-                <img src={props.cssLogo}/>
+                <img src={props.cssLogo} alt="css-Logo"/>
               </div>
               <div className='tech-icons'>
-                <img src={props.javascriptLogo}/>
+                <img src={props.javascriptLogo} alt="Javascript-Logo"/>
               </div>
               <div className='tech-icons'>
-                <img src={props.reactjsLogo}/>
+                <img src={props.reactjsLogo} alt="reactJS"/>
               </div>
               <div className='tech-icons'>
-                <img src={props.bootstrapLogo}/>
+                <img src={props.bootstrapLogo} alt="bootstrap-Logo"/>
               </div>
               <div className='tech-icons'>
-                <img src={props.sassLogo}/>
+                <img src={props.sassLogo} alt="sass-Logo"/>
               </div>
               <div className='tech-icons'>
-                <img src={props.jqueryLogo}/>
+                <img src={props.jqueryLogo} alt="jquery-logo"/>
               </div>
               <div className='tech-icons'>
-                <img src={props.phpLogo}/>
+                <img src={props.phpLogo} alt="php-logo"/>
               </div>
               <div className='tech-icons'>
-                <img src={props.mysqlLogo}/>
+                <img src={props.mysqlLogo} alt="mysql-logo"/>
               </div>
               <div className='tech-icons'>
-                <img src={props.wordpressLogo}/>
+                <img src={props.wordpressLogo} alt="wordpress-logo"/>
               </div>
               <div className='tech-icons'>
-                <img src={props.githubLogo}/>
+                <img src={props.githubLogo} alt="github-logo"/>
               </div>
             </div>
           </div>

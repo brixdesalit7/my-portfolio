@@ -4,8 +4,9 @@ import './style/App.scss';
 import './style/Responsive.scss';
 // import component
 import  Navbar  from './components/Navbar';
-import  Introduction  from './components/Introduction';
+import Introduction  from './components/Introduction';
 import AboutMe from './components/AboutMe';
+import Project from './components/Project';
 // import image
 import Myimg from './img/my-img.webp';
 import htmlLogo from './img/html.png';
@@ -19,6 +20,12 @@ import phpLogo from './img/php.png';
 import mysqlLogo from './img/mysql.png';
 import wordpressLogo from './img/wordpress.png';
 import githubLogo from './img/github.png';
+import blogWeb from './img/blogWebsite.webp';
+import bmsWeb from './img/bmsWeb.webp';
+import digitalClock from './img/digitalClock.webp';
+import schoolWebsite from './img/schoolWebsite.webp';
+import randomQuote from './img/randomQuote.webp';
+import cashierWeb from './img/cashierWeb.webp';
 
 // Main component
 function App() {
@@ -42,6 +49,16 @@ function App() {
         mysqlLogo = {mysqlLogo}
         wordpressLogo = {wordpressLogo}
         githubLogo = {githubLogo}
+        />
+      </section>
+      <section id="projects">
+        <Project        
+        blogWeb = {blogWeb}
+        bmsWeb = {bmsWeb}
+        digitalClock = {digitalClock}
+        schoolWebsite = {schoolWebsite}
+        randomQuote = {randomQuote}
+        cashierWeb = {cashierWeb}
         />
       </section>
     </div>

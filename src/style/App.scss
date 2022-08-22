@@ -244,3 +244,44 @@ html {
   font-weight: 300;
   font-family: $poppinsFont;
 }
+
+// PROJECT SECTION
+#project-section {
+  width: 100%;
+  position: relative;
+  top: 120px;
+  height: 100vh;
+  border: 1px solid red;
+  .project-wrapper {
+    position: relative;
+    padding: 15px 8px; 
+    top: 110px;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 1px solid red;
+    display: grid;
+    gap: 30px 50px;
+    grid-auto-columns: 50px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+  }
+  .project-wrapper > div {
+    border: 1px solid red;
+    background-color: black;
+  }
+  .project-img {
+    max-width: 700px;
+  }
+  .project-img img {
+    width: 100%;
+  }
+ 
+}
+#project-section h2 {
+  position: relative;
+  text-align: center;
+  top: 70px;
+  font-size: 55px;
+  font-weight: 300;
+  font-family: $poppinsFont;
+}
