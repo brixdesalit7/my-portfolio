@@ -11,7 +11,7 @@ const AboutMe = (props) => {
         </div>
         <div className='about-content'>
           <p>
-            My name is Bryxx, I lived in Muntinlupa City, Philippines, I am fresh graduate of 3 years course in 
+            Hi, My name is Bryxx, I lived in Muntinlupa City, Philippines, I am fresh graduate of 3 years course in 
             Diploma in Information Technology from Datamex Institute of Computer Technology.
           </p>
           <p>

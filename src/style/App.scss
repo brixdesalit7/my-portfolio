@@ -18,6 +18,7 @@ $robotoFont : ''Roboto', sans-serif;';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 body {
   background-color: $htmlBackground;
@@ -241,21 +242,24 @@ html {
   text-align: center;
   top: 70px;
   font-size: 55px;
-  font-weight: 300;
+  font-weight: 500;
+  letter-spacing: 0.2em;
   font-family: $poppinsFont;
 }
 
 // PROJECT SECTION
 #project-section {
-  width: 100%;
+  max-width: 100%;
   position: relative;
   top: 120px;
   height: 100vh;
+  padding: 10px 15px;
   .project-wrapper {
     position: relative;
     padding: 15px 8px; 
     top: 110px;
     max-width: 100%;
+    min-height: auto;
     margin: 0 auto;
     display: grid;
     gap: 30px 25px;
@@ -264,17 +268,15 @@ html {
     justify-content: space-around;
   }
   .project-img {
-    max-width: 100;
     box-shadow: 1px 2px 15px -1px rgba(0,0,0,0.82)
   }
-  .project-img img {
+  .content img {
     width: 100%;
     height : 100%;
   }
   .content {
     position: relative;
-    width: 100%;
-    max-width: 900px;
+    max-width: 100%;
     height: 100%;
     margin: auto;
     overflow: hidden;
@@ -284,7 +286,7 @@ html {
     background: rgba(0,0,0,0.7);
     position: absolute;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     left: 0;
     top: 0;
     bottom: 0;
@@ -295,13 +297,14 @@ html {
     transition: all 0.4s ease-in-out 0s;
   }
 
-  .content:hover .content-overlay{
+  .content:hover .content-overlay {
     opacity: 1;
     cursor: pointer;
   }
 
   .content-image{
-    width: 100%;
+    max-height: 100%;
+    height: auto;
   }
 
   .content-details {
@@ -353,6 +356,8 @@ html {
     text-align: center;
     top: 70px;
     font-size: 55px;
-    font-weight: 300;
+    font-weight: 500;
+    letter-spacing: 0.2em;
     font-family: $poppinsFont;
   }
+
