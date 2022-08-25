@@ -7,8 +7,16 @@
         padding: 13px 3px;
         margin-left: 13px;
     }
-    .navbar-menu {
+    .navbar-menu li a {
         display: none;
+    }
+    #nav-menu {
+        display: block;
+    }
+    #resume {
+        max-width: 150px;
+        margin: 10px auto;
+        padding: 5px 13px;
     }
     }
     // INTRODUCTION

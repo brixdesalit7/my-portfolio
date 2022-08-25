@@ -39,7 +39,7 @@ const Project = (props) => {
     
   return (
     <section id="project-section">
-      <h2>Projects</h2>
+      <h2>Personal Projects</h2>
       <FsLightbox
             toggler={lightboxController.toggler}
             captions={[

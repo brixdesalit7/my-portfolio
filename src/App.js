@@ -7,6 +7,7 @@ import  Navbar  from './components/Navbar';
 import Introduction  from './components/Introduction';
 import AboutMe from './components/AboutMe';
 import Project from './components/Project';
+import Footer from './components/Footer';
 // import image
 import Myimg from './img/my-img.webp';
 import htmlLogo from './img/html.png';
@@ -61,6 +62,9 @@ function App() {
         cashierWeb = {cashierWeb}
         />
       </section>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   );
 }
