@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Footer = () => {
+    const getYear = new Date();
   return (
     <div className='footer'>
     <div className='footer-content'>
@@ -21,6 +22,9 @@ const Footer = () => {
                 <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
             </ul>
         </div>
+    </div>
+    <div className='copyright'>
+        Designed & Built by Bryxx Andre Desalit
     </div>
     </div>
   )

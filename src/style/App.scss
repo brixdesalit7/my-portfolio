@@ -402,18 +402,17 @@ html {
 
 // FOOTER STYLE
 .footer {
-  width: 100%;
-  height: 400px;
+  max-width: 100%;
+  height: 500px;
   position: relative;
-  margin-top: 30%;
+  top: 320px;
   background-color: $backgroundColor;
   .footer-content {
     position: relative;
-    top: 120px;
+    top: 85px;
     padding: 20px 15px;
     max-width: 800px;
     margin: 0 auto;
-    border: 1px solid red;
   }
   .footer-logo h1 {
     text-align: center;
@@ -422,8 +421,7 @@ html {
     color: $lightblueColor;
   }
   .footer-tagline {
-    margin-top: 35px;
-    
+    margin-top: 50px;
   }
   .footer-tagline p {
     text-align: center;
@@ -433,7 +431,7 @@ html {
   }
   .footer-icons {
     max-width: 600px;
-    margin: 55px auto;
+    margin: 0 auto;
     text-align: center;
   }
   .footer-icons ul {
@@ -441,6 +439,8 @@ html {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 60px;
+
   }
   .footer-icons ul li {
     padding: 0 15px;
@@ -449,15 +449,27 @@ html {
   .footer-icons a {
     margin: 0 auto;
     color: $lightblueColor;
-    font-size: 20px;
+    font-size: 18px;
     border: 2px solid $lightblueColor;
-    padding: 20px;
+    padding: 15px;
     border-radius: 50%;
     transition: 0.2s;
   }
   .footer-icons a:hover {
     border: 2px solid $lightGreen;
     color: $lightGreen;
+  }
+  .copyright {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    font-size: 16px;
+    text-align: center;
+    background-color: $lightblueColor;
+    width: 100%;
+    color: black;
+    padding: 15px 0;
+    font-family: $fontmono;
   }
 
 }
