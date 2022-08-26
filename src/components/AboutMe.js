@@ -20,7 +20,7 @@ const AboutMe = (props) => {
             , but the field really interested me is web development.
           </p>
           <p>
-            Then i started to study each languages used in Web Development, like HTML and CSS, after a months of studying i am 
+            Then i started to study each languages used in Web Development, like HTML and CSS and create my personal projects, after a months of studying i am 
             now familiar in front-end and back-end web development.
           </p>
           <div className='tech-stacks'>
