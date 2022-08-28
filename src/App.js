@@ -27,14 +27,16 @@ import digitalClock from './img/digitalClock.webp';
 import schoolWebsite from './img/schoolWebsite.webp';
 import randomQuote from './img/randomQuote.webp';
 import cashierWeb from './img/cashierWeb.webp';
-
+import codingImg from './img/coding_img.png';
 // Main component
 function App() {
   return (
     <div>
       <header id="header-section">
         <Navbar/>
-        <Introduction/>
+        <Introduction
+        codingImg = {codingImg}
+        />
       </header>
       <section id="about-me">
         <AboutMe 

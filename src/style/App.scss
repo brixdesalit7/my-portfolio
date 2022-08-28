@@ -48,7 +48,7 @@ html {
     transition: 0.3s;
   }
   .navbar-title h1{
-    background: linear-gradient(to right, $lightGreen 20%, $lightGreen 40%, $lightblueColor 60%, $lightGreen 80%, $lightblueColor 100%);
+    background: linear-gradient(to left, $lightblueColor 20%, white 40%, $lightblueColor 60%, white 80%, $lightblueColor 100%);
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
@@ -201,7 +201,18 @@ html {
       font-family: $fontmono;
       margin-top: 10px;
       font-weight: 400;
-    }    
+    }
+    .intro-box-2 img {
+      max-width: 350px;
+      max-height: 300px;
+      border-radius: 50%;
+      animation: bounce2 3s ease infinite;
+    }
+    @keyframes bounce2 {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      40% {transform: translateY(-30px);}
+      60% {transform: translateY(-15px);}
+    }
   }
 }
 // END OF INTROUCTION STYLE
@@ -229,6 +240,7 @@ html {
     align-self: flex-start;
     border: 3px solid $lightColorp;
     border-radius: 5px;
+    padding: 7px;
   }
   .my-image img {
     max-width: 100%;
@@ -238,6 +250,10 @@ html {
     margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     z-index: 1;
+    transition: 0.2s;
+  }
+  .my-image img:hover {
+    transform: translate(-7px,12px);
   }
   .about-content {
     align-self: flex-end;
@@ -274,7 +290,7 @@ html {
     margin-top: 25px;
   }
   .tech-icons img {
-    max-width: 100px;
+    max-width: 80px;
     height: auto;
   }
 }
@@ -305,7 +321,7 @@ html {
     display: grid;
     gap: 30px 25px;
     grid-auto-columns: 50px;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     justify-content: space-around;
   }
   .project-img {
@@ -374,6 +390,7 @@ html {
 
   .content-details h3{
     color: #fff;
+    font-size: 21px;
     font-family: $fontmono;
     font-weight: 300;
     letter-spacing: 0.2em;
@@ -384,7 +401,7 @@ html {
   .content-details p{
     color: #fff;
     font-family: $fontmono;
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   .fadeIn-bottom{
