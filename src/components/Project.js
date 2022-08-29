@@ -75,7 +75,12 @@ const Project = (props) => {
             datamex_3,
             datamex_4,
             datamex_5,
-            props.randomQuote
+            props.randomQuote,
+            props.markdownPrev,
+            props.tributePage1,
+            props.tributePage,
+            props.watchflix_1,
+            props.watchflix_2
             ]}
             slide={lightboxController.slide}
             initialAnimation="scale-in-long"
@@ -139,6 +144,36 @@ const Project = (props) => {
                 <div className="content-details fadeIn-bottom">
                   <h3 className="content-title">Random Quote</h3>
                   <p className="content-text">Javascript, SASS</p>
+                </div>
+            </div>
+        </div>
+        <div className='project-img' id='project-6'  onClick={() => openLightboxOnSlide(25)}>
+            <div className="content">
+                <div className="content-overlay"></div>
+                <img className="content-image" src={props.markdownPrev} alt="random-quote-website"/>
+                <div className="content-details fadeIn-bottom">
+                  <h3 className="content-title">Markdown Previewer</h3>
+                  <p className="content-text">Reactjs</p>
+                </div>
+            </div>
+        </div>
+        <div className='project-img' id='project-6'  onClick={() => openLightboxOnSlide(26)}>
+            <div className="content">
+                <div className="content-overlay"></div>
+                <img className="content-image" src={props.tributePage1} alt="random-quote-website"/>
+                <div className="content-details fadeIn-bottom">
+                  <h3 className="content-title">Tribute Page</h3>
+                  <p className="content-text">HTML, CSS</p>
+                </div>
+            </div>
+        </div>
+        <div className='project-img' id='project-6'  onClick={() => openLightboxOnSlide(28)}>
+            <div className="content">
+                <div className="content-overlay"></div>
+                <img className="content-image" src={props.watchflix_1} alt="random-quote-website"/>
+                <div className="content-details fadeIn-bottom">
+                  <h3 className="content-title">Product Landing Page</h3>
+                  <p className="content-text">HTML, CSS</p>
                 </div>
             </div>
         </div>

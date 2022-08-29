@@ -419,13 +419,31 @@ html {
     font-family: $fontmono;
   }
 
+//CONTACT
+.contact {
+  position: absolute;
+  bottom: 85%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  padding: 15px 10px;
+  width: 900px;
+  text-align: center;
+  background-color: black;
+  margin: 0 auto;
+}
+.contact h3 {
+  color: $lightblueColor;
+  font-size: 45px;
+  font-family: $fontmono;
 
+}
 // FOOTER STYLE
 .footer {
   max-width: 100%;
   height: 500px;
   position: relative;
-  top: 320px;
+  top: 340px;
   background-color: $backgroundColor;
   .footer-content {
     position: relative;

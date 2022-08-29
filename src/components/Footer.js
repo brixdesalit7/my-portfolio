@@ -1,26 +1,24 @@
 import React from 'react'
 
 const Footer = () => {
-    const getYear = new Date();
   return (
     <div className='footer'>
     <div className='footer-content'>
         <div className='footer-logo'>
-            <h1>Bryxx</h1>
+            <h1>Let's work together</h1>
+        </div>
+        <div className='footer-icons'>
+            <ul>
+                <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/xxyrb" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-google"></i></a></li>
+                <li><a href="https://github.com/brixdesalit7" target="_blank"><i class="bi bi-github"></i></a></li>
+            </ul>
         </div>
         <div className='footer-tagline'>
             <p>Practice. Practice. </p>
             <p>Code. Code</p>
             <p>Repeat</p>
-        </div>
-        <div className='footer-icons'>
-            <ul>
-                <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                <li><a href="#"><i class="bi bi-google"></i></a></li>
-                <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
-            </ul>
         </div>
     </div>
     <div className='copyright'>

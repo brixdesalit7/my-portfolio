@@ -28,6 +28,12 @@ import schoolWebsite from './img/schoolWebsite.webp';
 import randomQuote from './img/randomQuote.webp';
 import cashierWeb from './img/cashierWeb.webp';
 import codingImg from './img/coding_img.png';
+import markdownPrev from './img/markdown-previewer.webp';
+import tributePage from './img/tribute_page_1.webp';
+import tributePage1 from './img/tribute_page.webp';
+import watchflix_1 from './img/watchflix_1.webp';
+import watchflix_2 from './img/watchflix_2.webp';
+
 // Main component
 function App() {
   return (
@@ -62,6 +68,11 @@ function App() {
         schoolWebsite = {schoolWebsite}
         randomQuote = {randomQuote}
         cashierWeb = {cashierWeb}
+        markdownPrev = {markdownPrev}
+        tributePage = {tributePage}
+        tributePage1 = {tributePage1}
+        watchflix_1 = {watchflix_1}
+        watchflix_2 = {watchflix_2}
         />
       </section>
       <footer>
