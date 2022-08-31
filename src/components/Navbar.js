@@ -10,6 +10,27 @@ const Navbar = () => {
   const closeNav = () => {
     document.getElementById("navbarSM").style.height = "0%";
   }
+
+  const makeNavLinksSmooth = () => {
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    for(let n in navLinks) {
+      if(navLinks.hasOwnProperty(n)) {
+        navLinks[n].addEventListener('click', e => {
+          e.preventDefault();
+          document.querySelector(navLinks[n].hash)
+          .scrollIntoView({
+            behavior : 'smooth'
+          });
+        });
+      }
+    }
+  }
+
+ 
+  makeNavLinksSmooth();
+
+
   return ( 
     <div className='navbar-wrap' id="navbar-wrap">
       <NavbarMenu closeNav={closeNav}/>
@@ -19,13 +40,13 @@ const Navbar = () => {
       <nav className='navbar-menu'>
         <ul>
           <li>
-            <a className='nav-link' href="#">Projects</a>
+            <a className='nav-link' href="#about-me">About</a>
+          </li>
+          <li className='active'>
+            <a className='nav-link' href="#project-section">Projects</a>
           </li>
           <li>
-            <a className='nav-link' href="#">About</a>
-          </li>
-          <li>
-            <a className='nav-link' href="#">Contact</a>
+            <a className='nav-link' href="#contact">Contact</a>
           </li>
           <li>
             <a className='nav-link' id="resume" href="#">Resume</a>
