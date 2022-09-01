@@ -1,7 +1,10 @@
 import React from 'react'
-
+import { useRef, useEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const AboutMe = (props) => {
+  const { ref: magicSectionRef, inView: magicSectionIsVisible } = useInView();
+
   return (
     <section id='About-me'>
       <h2>About Me </h2>
@@ -9,7 +12,7 @@ const AboutMe = (props) => {
         <div className='my-image'>
           <img src={props.img} alt="myImage"/>
         </div>
-        <div className='about-content'>
+        <div  ref={magicSectionRef} className={`${'about-content'} ${magicSectionIsVisible ? 'fade-in-about' : ''}`}>
           <p>
             Hi, My name is Bryxx, I lived in Muntinlupa City, Philippines, I am fresh graduate of 3 years course in 
             Diploma in Information Technology from Datamex Institute of Computer Technology.
@@ -23,7 +26,7 @@ const AboutMe = (props) => {
             Then i started to study each languages used in Web Development, like HTML and CSS and create my personal projects, after a months of studying i am 
             now familiar in front-end and back-end web development.
           </p>
-          <div className='tech-stacks'>
+          <div className={`${'tech-stacks'} ${magicSectionIsVisible ? 'fade-in-about' : ''}`}>
             <h3>Technology Stacks</h3>
             <div className='tech-icons-wrapper'>
               <div className='tech-icons'>
