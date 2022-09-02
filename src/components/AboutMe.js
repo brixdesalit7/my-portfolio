@@ -1,5 +1,4 @@
 import React from 'react'
-import { useRef, useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const AboutMe = (props) => {
@@ -12,7 +11,7 @@ const AboutMe = (props) => {
         <div className='my-image'>
           <img src={props.img} alt="myImage"/>
         </div>
-        <div  ref={magicSectionRef} className={`${'about-content'} ${magicSectionIsVisible ? 'fade-in-about' : ''}`}>
+        <div ref={magicSectionRef} className={`${'about-content'} ${magicSectionIsVisible ? 'fade-in-about' : ''}`}>
           <p>
             Hi, My name is Bryxx, I lived in Muntinlupa City, Philippines, I am fresh graduate of 3 years course in 
             Diploma in Information Technology from Datamex Institute of Computer Technology.

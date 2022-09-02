@@ -1,4 +1,5 @@
 import React from 'react'
+import { useInView } from 'react-intersection-observer';
 // import image 
 import blog_1 from '../img/blog-website-1.png';
 import blog_2 from '../img/blog-website-2.png';
@@ -36,7 +37,8 @@ const Project = (props) => {
     slide: number
     });
     }
-    
+    const { ref: magicSectionRef, inView: magicSectionIsVisible } = useInView();
+
   return (
     <section id="project-section">
       <h2>Personal Project</h2>
@@ -86,7 +88,7 @@ const Project = (props) => {
             initialAnimation="scale-in-long"
             slideChangeAnimation="scale-in"
             />
-      <div className='project-wrapper'>
+      <div ref={magicSectionRef} className={`${'project-wrapper'} ${magicSectionIsVisible ? 'fade-in-project' : ''}`}>
         <div className='project-img' id='project-1' onClick={() => openLightboxOnSlide(1)}>
             <div className="content">
                 <div className="content-overlay"></div>

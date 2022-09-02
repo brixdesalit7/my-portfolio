@@ -2,6 +2,7 @@ import React from 'react';
 import '../style/App.scss';
 import '../style/Responsive.scss';
 import NavbarMenu from './Navbar_small_devices';
+import { useInView } from 'react-intersection-observer';
 
 const Navbar = () => {
   const openNav = () => {
@@ -26,18 +27,18 @@ const Navbar = () => {
       }
     }
   }
+  const { ref: magicSectionRef, inView: magicSectionIsVisible } = useInView();
 
- 
   makeNavLinksSmooth();
 
 
   return ( 
-    <div className='navbar-wrap' id="navbar-wrap">
+    <div className='navbar-wrap' id="navbar-wrap" ref={magicSectionRef}>
       <NavbarMenu closeNav={closeNav}/>
-      <div className='navbar-title'>
+      <div className={`${'navbar-title'} ${magicSectionIsVisible ? 'fade-in-title' : ''}`} >
         <h1><a id="site-name" href="#">Bryxx</a></h1>
       </div>
-      <nav className='navbar-menu'>
+      <nav className={`${'navbar-menu'} ${magicSectionIsVisible ? 'fade-in-nav' : ''}`}>
         <ul>
           <li>
             <a className='nav-link' href="#about-me">About</a>
