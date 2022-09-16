@@ -85,6 +85,9 @@
         font-size: 40px;
         letter-spacing: 0.1em;
     }
+    #last-grid {
+    grid-column: 1 / 2;
+    }
     // FOOTER 
     .footer {
         width: 100%;

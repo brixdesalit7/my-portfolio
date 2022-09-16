@@ -3,15 +3,19 @@ import '../style/App.scss';
 import '../style/Responsive.scss';
 import NavbarMenu from './Navbar_small_devices';
 import { useInView } from 'react-intersection-observer';
+import myResume from './resume.pdf';
+
 
 const Navbar = () => {
-  const openNav = () => {
+  // open nav function
+  function openNav() {
     document.getElementById("navbarSM").style.height = "100%";
   }
+  // close nav function
   const closeNav = () => {
     document.getElementById("navbarSM").style.height = "0%";
   }
-
+  // smoothscroll function
   const makeNavLinksSmooth = () => {
     const navLinks = document.querySelectorAll('.nav-link');
 
@@ -34,7 +38,7 @@ const Navbar = () => {
 
   return ( 
     <div className='navbar-wrap' id="navbar-wrap" ref={magicSectionRef}>
-      <NavbarMenu closeNav={closeNav}/>
+      <NavbarMenu closeNav={closeNav} resume={myResume}/>
       <div className={`${'navbar-title'} ${magicSectionIsVisible ? 'fade-in-title' : ''}`} >
         <h1><a id="site-name" href="#">Bryxx</a></h1>
       </div>
@@ -50,7 +54,12 @@ const Navbar = () => {
             <a className='nav-link' href="#contact">Contact</a>
           </li>
           <li>
-            <a className='nav-link' id="resume" href="#">Resume</a>
+          <a href={myResume} 
+            target="_blank" 
+            rel="noreferrer"
+            id="resume">
+            Resume
+          </a>
           </li>
           <li>
             <a className='nav-link' id="nav-menu" onClick={openNav} href="#"><i class="bi bi-menu-button-wide"></i></a>

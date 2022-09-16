@@ -13,17 +13,16 @@ const AboutMe = (props) => {
         </div>
         <div ref={magicSectionRef} className={`${'about-content'} ${magicSectionIsVisible ? 'fade-in-about' : ''}`}>
           <p>
-            Hi, My name is Bryxx, I lived in Muntinlupa City, Philippines, I am fresh graduate of 3 years course in 
+            Hi, My name is Bryxx, I lived in Muntinlupa City, Philippines, I am graduate of 3 years course of 
             Diploma in Information Technology from Datamex Institute of Computer Technology.
           </p>
           <p>
-            Since when i was a child I'm really fascinated in computer that is why on my college years i take a computer 
-            related course to gain additional knowledge, and then i started to learned hardware, networking and software development
-            , but the field really interested me is web development.
+            In my college years i take a computer related course to gain additional knowledge, and then i started to learned hardware, networking and software development
+            , but the Information Technology field really interested me is web development.
           </p>
           <p>
-            Then i started to study each languages used in Web Development, like HTML and CSS and create my personal projects, after a months of studying i am 
-            now familiar in front-end and back-end web development.
+            I started to study each languages used in Web Development, like HTML and CSS and create my own personal projects, 
+            after a months of studying i have now knowledge in front-end and back-end web development and still continue to learning.
           </p>
           <div className={`${'tech-stacks'} ${magicSectionIsVisible ? 'fade-in-about' : ''}`}>
             <h3>Technology Stacks</h3>

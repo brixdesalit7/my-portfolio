@@ -46,7 +46,7 @@ function App() {
       </header>
       <section id="about-me">
         <AboutMe 
-        img={Myimg}
+        img = {Myimg}
         htmlLogo = {htmlLogo}
         cssLogo = {cssLogo}
         javascriptLogo = {javascriptLogo}
