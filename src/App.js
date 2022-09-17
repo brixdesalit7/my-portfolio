@@ -38,8 +38,8 @@ import watchflix_2 from './img/watchflix_2.webp';
 function App() {
   return (
     <div>
+      <Navbar/>
       <header id="header-section">
-        <Navbar/>
         <Introduction
         codingImg = {codingImg}
         />

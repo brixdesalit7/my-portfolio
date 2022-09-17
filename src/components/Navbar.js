@@ -9,11 +9,14 @@ import myResume from './resume.pdf';
 const Navbar = () => {
   // open nav function
   function openNav() {
-    document.getElementById("navbarSM").style.height = "100%";
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.zIndex = "9";
+    document.getElementById("nav-menu").style.display = "none";
   }
-  // close nav function
+  // // close nav function
   const closeNav = () => {
-    document.getElementById("navbarSM").style.height = "0%";
+    document.getElementById("mySidenav").style.width = "0%";
+    document.getElementById("nav-menu").style.display = "block";
   }
   // smoothscroll function
   const makeNavLinksSmooth = () => {
@@ -34,7 +37,6 @@ const Navbar = () => {
   const { ref: magicSectionRef, inView: magicSectionIsVisible } = useInView();
 
   makeNavLinksSmooth();
-
 
   return ( 
     <div className='navbar-wrap' id="navbar-wrap" ref={magicSectionRef}>
@@ -62,7 +64,7 @@ const Navbar = () => {
           </a>
           </li>
           <li>
-            <a className='nav-link' id="nav-menu" onClick={openNav} href="#"><i class="bi bi-menu-button-wide"></i></a>
+            <a className='nav-link' id="nav-menu" rel='noreferrer' onClick={openNav} href="#"><i className="bi bi-menu-button-wide"></i></a>
           </li>
         </ul>
       </nav>
