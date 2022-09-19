@@ -14,8 +14,8 @@ const AboutMe = (props) => {
         <div ref={magicSectionRef} className={`${'about-content'} ${magicSectionIsVisible ? 'fade-in-about' : ''}`}>
           <p>
           Hi, My name is Bryxx, I lived in Muntinlupa City, Philippines, I am a graduate of 3 years course of Diploma in 
-          Information Technology from Datamax Institute of Computer Technology, I take an Information Technology course 
-          in college because of their so many job opportunity on this field, and the field I'm really interested in web 
+          Information Technology from Datamex Institute of Computer Technology, I take an Information Technology course 
+          in college because of their so many job opportunity on this field, and the field I'm really interested is web 
           development.
           </p>
           <p>
@@ -24,19 +24,17 @@ const AboutMe = (props) => {
           which is use to display and style a website.
           </p>
           <p>
-          In the second year and third year of college, we have a capstone project, me and my group created a web barangay 
-          management system and web based cashier pos system, my role on this group is programmer which i see a chance to 
-          gain additional knowledge in web development, after this project I have now knowledge in front-end and back-end 
-          development.
+          In the second year and third year of college, we have a capstone project, and I'm the only programmer in our 
+          group who created a web barangay management system and web-based cashier POS system, I take this as an opportunity 
+          to improve my skills in web development, After this project, I have now knowledge of front-end and back-end development
+          and still continuing to learn technology.
           </p>
-          {/* <p>
-            In my college years i take a computer related course to gain additional knowledge, and then i started to learned hardware, networking and software development
-            , but the Information Technology field really interested me is web development.
-          </p> */}
-          {/* <p>
-            I started to study each languages used in Web Development, like HTML and CSS and create my own personal projects, 
-            after a months of studying i have now knowledge in front-end and back-end web development and still continue to learning.
-          </p> */}
+          <p>
+          For the past month, I take free online courses on freeCodeCamp and Solo Learn and I get a certificate after the course 
+          completion, this is where I learned how to use front-end development and libraries such as ReactJS, jQuery, SASS, 
+          Bootstrap and WordPress (CMS).
+          </p>
+    
           <div className={`${'tech-stacks'} ${magicSectionIsVisible ? 'fade-in-about' : ''}`}>
             <h3>Technology Stacks</h3>
             <div className='tech-icons-wrapper'>

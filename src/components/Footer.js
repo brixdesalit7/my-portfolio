@@ -15,11 +15,6 @@ const Footer = () => {
                 <li><a href="https://github.com/brixdesalit7" target="_blank"><i className="bi bi-github"></i></a></li>
             </ul>
         </div>
-        <div className='footer-tagline'>
-            <p>Practice. Practice. </p>
-            <p>Code. Code</p>
-            <p>Repeat</p>
-        </div>
     </div>
     <div className='copyright'>
         Designed & Built by Bryxx Andre Desalit
