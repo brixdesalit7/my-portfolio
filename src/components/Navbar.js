@@ -42,29 +42,30 @@ const Navbar = () => {
     <div className='navbar-wrap' id="navbar-wrap" ref={magicSectionRef}>
       <NavbarMenu closeNav={closeNav} resume={myResume}/>
       <div className={`${'navbar-title'} ${magicSectionIsVisible ? 'fade-in-title' : ''}`} >
-        <h1><a id="site-name" href="#">Bryxx</a></h1>
+        <h2 id="site-name">Bryxx</h2>
       </div>
       <nav className={`${'navbar-menu'} ${magicSectionIsVisible ? 'fade-in-nav' : ''}`}>
         <ul>
           <li>
-            <a className='nav-link' href="#about-me">About</a>
+            <a className='nav-link' title='about-me' href="#about-me">About</a>
           </li>
           <li className='active'>
-            <a className='nav-link' href="#project-section">Projects</a>
+            <a className='nav-link' title='project' href="#project-section">Projects</a>
           </li>
           <li>
-            <a className='nav-link' href="#contact">Contact</a>
+            <a className='nav-link' title='contact' href="#contact">Contact</a>
           </li>
           <li>
           <a href={myResume} 
             target="_blank" 
+            title='resume'
             rel="noreferrer"
             id="resume">
             Resume
           </a>
           </li>
           <li>
-            <a className='nav-link' id="nav-menu" rel='noreferrer' onClick={openNav} href="#"><i className="bi bi-menu-button-wide"></i></a>
+            <button className='nav-link' id="nav-menu" rel='noreferrer' onClick={openNav}><i className="bi bi-menu-button-wide"></i></button>
           </li>
         </ul>
       </nav>

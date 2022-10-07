@@ -64,7 +64,7 @@ html {
 
 /* NAVBAR STYLE */
 // animation
-#header-section {
+#introduction {
   position: relative;
   height: 100vh;
   background-color: $backgroundColor;
@@ -87,7 +87,7 @@ html {
     text-decoration: none;
     transition: 0.3s;
   }
-  .navbar-title h1{
+  .navbar-title h2{
     background: linear-gradient(to left, $lightblueColor 20%, white 40%, $lightblueColor 60%, white 80%, $lightblueColor 100%);
     background-size: 200% auto;
     background-clip: text;
@@ -155,6 +155,9 @@ html {
   #nav-menu {
     font-size: 30px;
     display: none;
+    border: none;
+    background-color: transparent;
+    color: $lightblueColor;
   }
   
   // navmenu sm-device
@@ -170,7 +173,11 @@ html {
     transition: 0.5s;
     padding-top: 60px;
   }
-  
+  .closebtn {
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
   .sidenav a {
     padding: 8px 10px 28px 15px;
     text-decoration: none;
@@ -506,7 +513,7 @@ html {
     max-width: 800px;
     margin: 0 auto;
   }
-  .footer-logo h1 {
+  .footer-logo h2 {
     text-align: center;
     font-family: $fontmono;
     font-size: 50px;
@@ -555,7 +562,6 @@ html {
     color: white;
     position: absolute;
     bottom: 0px;
-    font-size: 16px;
     text-align: center;
     background-color: $lightblueColor;
     width: 100%;

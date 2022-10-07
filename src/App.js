@@ -37,13 +37,14 @@ import watchflix_2 from './img/watchflix_2.webp';
 // Main component
 function App() {
   return (
-    <div>
+    <div className='page-wrapper'>
       <Navbar/>
-      <header id="header-section">
+      <main role="main-content">
+      <section id="introduction">
         <Introduction
         codingImg = {codingImg}
         />
-      </header>
+      </section>
       <section id="about-me">
         <AboutMe 
         img = {Myimg}
@@ -75,7 +76,8 @@ function App() {
         watchflix_2 = {watchflix_2}
         />
       </section>
-      <footer>
+      </main>
+      <footer className='page-footer'>
         <Footer/>
       </footer>
     </div>
