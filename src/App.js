@@ -19,7 +19,6 @@ import sassLogo from './img/sass.png';
 import jqueryLogo from './img/jquery.png';
 import phpLogo from './img/php.png';
 import mysqlLogo from './img/mysql.png';
-import wordpressLogo from './img/wordpress.png';
 import githubLogo from './img/github.png';
 import blogWeb from './img/blogWebsite.webp';
 import bmsWeb from './img/bmsWeb.webp';
@@ -57,7 +56,6 @@ function App() {
         jqueryLogo = {jqueryLogo}
         phpLogo = {phpLogo}
         mysqlLogo = {mysqlLogo}
-        wordpressLogo = {wordpressLogo}
         githubLogo = {githubLogo}
         />
       </section>

@@ -2,6 +2,7 @@ import React from 'react';
 import '../style/App.scss';
 import '../style/Responsive.scss';
 import NavbarMenu from './Navbar_small_devices';
+//  Intersection Observer API to tell you when an element enters or leaves the viewport
 import { useInView } from 'react-intersection-observer';
 import myResume from './resume.pdf';
 
@@ -34,6 +35,8 @@ const Navbar = () => {
       }
     }
   }
+  // ref : assign the element to monitor
+  // inView : inView status and the current entry
   const { ref: magicSectionRef, inView: magicSectionIsVisible } = useInView();
 
   makeNavLinksSmooth();

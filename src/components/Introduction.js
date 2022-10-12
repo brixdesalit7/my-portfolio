@@ -1,6 +1,9 @@
 import React from 'react'
+//  Intersection Observer API to tell you when an element enters or leaves the viewport
 import { useInView } from 'react-intersection-observer';
 const Introduction = (props) => {
+    // ref : assign the element to monitor
+    // inView : inView status and the current entry
     const { ref: magicSectionRef, inView: magicSectionIsVisible } = useInView();
 return (
     <div className='Introduction'  id="introduction">

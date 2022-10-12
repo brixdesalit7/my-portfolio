@@ -1,4 +1,5 @@
 import React from 'react'
+//  Intersection Observer API to tell you when an element enters or leaves the viewport
 import { useInView } from 'react-intersection-observer';
 // import image 
 import blog_1 from '../img/blog-website-1.webp';
@@ -45,6 +46,8 @@ const Project = (props) => {
     slide: number
     });
     }
+    // ref : assign the element to monitor
+    // inView : inView status and the current entry
     const { ref: magicSectionRef, inView: magicSectionIsVisible } = useInView();
 
   return (
