@@ -32,12 +32,7 @@ const AboutMe = (props) => {
           to improve my skills in web development, After this project, I have now knowledge of front-end and back-end development
           and still continuing to learn technology.
           </p>
-          <p>
-          For the past month, I take free online courses on freeCodeCamp and Solo Learn and I get a certificate after the course 
-          completion, this is where I learned how to use front-end development and libraries such as ReactJS, jQuery, SASS, 
-          Bootstrap and WordPress (CMS).
-          </p>
-    
+
           <div className={`${'tech-stacks'} ${magicSectionIsVisible ? 'fade-in-about' : ''}`}>
             <h3>Technology Stacks</h3>
             <div className='tech-icons-wrapper'>
